@@ -1,4 +1,4 @@
-FROM golang:1.9.2
+FROM golang:1.10.3
 WORKDIR /go/src/github.com/netlify/gotrue
 COPY . /go/src/github.com/netlify/gotrue/
 RUN make deps build
