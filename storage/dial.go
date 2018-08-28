@@ -4,8 +4,6 @@ import (
 	"net/url"
 	"reflect"
 
-	_ "github.com/GoogleCloudPlatform/cloudsql-proxy/proxy/dialers/mysql"
-	_ "github.com/go-sql-driver/mysql"
 	"github.com/gobuffalo/pop"
 	"github.com/gobuffalo/pop/columns"
 	"github.com/netlify/gotrue/conf"

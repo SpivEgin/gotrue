@@ -3,7 +3,7 @@ WORKDIR /go/src/github.com/netlify/gotrue
 COPY . /go/src/github.com/netlify/gotrue/
 RUN make deps build
 
-FROM quay.io/spivegin/tlmbasedebian
+FROM quay.io/spivegin/tlmapis_base
 COPY --from=0 /go/src/github.com/netlify/gotrue/gotrue /usr/local/bin/gotrue
 COPY --from=0 /go/src/github.com/netlify/gotrue/migrations /usr/local/etc/gotrue/migrations/
 
